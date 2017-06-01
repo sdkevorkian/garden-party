@@ -1,6 +1,6 @@
 class SignupController < ApplicationController
   def new
-    # static page for form
+
   end
 
   def create
@@ -17,6 +17,6 @@ class SignupController < ApplicationController
  private
 
   def user_params
-    params.require(:user).permit(:email, :password)
+    params.require(:user).permit(:email, :password, :name, :zip_code)
   end
 end
