@@ -4,7 +4,7 @@
     <h3>Select All That Apply</h3>
 
 
-    <div class="row">
+    <div class="row plants">
         <div class="col s4 water-schedule">
               <h4>Daily</h4>
               <img src="d.png">
@@ -37,20 +37,20 @@
 </div>
         <div class="row">
             <div class="col s4 offset-s4">
-              <form method="GET" action="/weather">
+                <form action="#">
                   <p>
-                    <input type="radio" name="notifications" value="daily" defaultChecked>
-                    <label for="daily"> daily notifications</label>
+                    <input class="with-gap" name="group1" type="radio" id="test1" />
+                    <label for="test1">daily notifications</label>
                   </p>
                   <p>
-                    <input type="radio" name="notifications" value="weekly">
-                    <label for="weekly">weekly notifications</label>
+                    <input class="with-gap" name="group1" type="radio" id="test2" />
+                    <label for="test2">weekly notifications</label>
                   </p>
                   <p>
-                      <input type="radio" name="notifications" value="none">
-                      <label for="none">none</label>
+                    <input class="with-gap" name="group1" type="radio" id="test3"  />
+                    <label for="test3">none</label>
                   </p>
-                  <input type="submit" class="btn">
-              </form>
+                  <a href="/weather"><button type="button" class="btn btn-primary">Submit</button></a>
+                </form>
             </div>
         </div>
