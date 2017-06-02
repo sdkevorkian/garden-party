@@ -1,19 +1,58 @@
-body {
-
-	font-family: 'Raleway-Bold';
-	color: rgb(43,43,43);
+*{
+    color: black;
 }
-h1,h2 {
-	 font-family: 'Gravitas One' !important;
+body {
+    font-family: 'Raleway-Bold';
+    color: rgb(43, 43, 43);
+}
 
+h1,
+h2 {
+    font-family: 'Gravitas One' !important;
 }
 
 .btn {
     margin-bottom: 5px;
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: rgb(134,210,201);
+    color: black;
+}
+
+nav {
+    background-color: rgba(134,210,201,.5);
+    color: black;
+}
+li{
+    color:black;
 }
 
 .day {
     width: 14%;
+    height: 300px;
+}
+
+.plants {
+    height: 780px;
+}
+
+.water-schedule {
+    position: relative;
+    height: 100%;
+}
+
+.water-schedule button {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.water-schedule img {
+    width: 60%;
+}
+
+.water-schedule p {
+    width: 80%;
 }
 
 .water-display {
@@ -24,19 +63,51 @@ h1,h2 {
     height: 100px;
 }
 
-.weather-display img {
+.calendar img {
     max-height: 50px;
 }
 
 .calendar {
     height: 300px;
 }
+
 .facebook {
-	background-color: rgb(59, 89, 152);
+
+
+	background-color: rgba(59, 89, 152,1);
+
 }
-.text1{
-	margin-top: -30px;
+
+.text1 {
+    margin-top: -30px;
 }
-.container1{
-	line-height: 90px;
+
+.container1 {
+    line-height: 90%x;
+}
+
+.directions img {
+    max-height: 100px;
+}
+
+.container1 {
+    line-height: 90px;
+}
+
+#mobile {
+    background-color: grey;
+}
+.submit {
+    background-color: rgb(214,229,78);
+}
+#logo img{
+    height:100%;
+    padding-left: 1em;
+}
+nav ul a {
+    color: black;
+}
+
+#divider{
+    border-left: 1px solid grey;
 }

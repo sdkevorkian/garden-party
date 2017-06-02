@@ -3,37 +3,45 @@
   <head>
     <title>Garden Party</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Garden Party</a>
-      <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="/" id="logo"><img src="/logo.png" alt="our logo"></a>
+      <a href="#" data-activates="mobile" class="button-collapse mobile-nav black-text"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
       <% if @current_user %>
         <li><a href="/profile/show">Profile</a></li>
         <li><a href="/plant">Plants</a></li>
-        <li><a href="/weather">My Garden</a></li>
+        <li><a href="/weather">Watering Can</a></li>
         <li><a href="/about">About Us</a></li>
         <li><%= link_to "Logout", "/auth/logout", class: "" %></li>
         <%else%>
-        <li><a href="/signup">Sign Up</a></li>
-        <li><a href="/login">Log In</a></li>
+        <li><a href="/signup" id="divider">Sign Up</a></li>
+        <li><a href="/login" id="divider">Log In</a></li>
         <%end%>
       </ul>
       <ul class="side-nav" id="mobile">
       <% if @current_user %>
         <li><a href="/profile/show">Profile</a></li>
+        <hr>
         <li><a href="/plant">Plants</a></li>
-        <li><a href="/weather">My Garden</a></li>
+        <hr>
+        <li><a href="/weather">Watering Can</a></li>
+        <hr>
         <li><a href="/about">About Us</a></li>
+        <hr>
         <li><%= link_to "Logout", "/auth/logout", class: "" %></li>
+        <hr>
         <%else%>
         <li><a href="/signup">Sign Up</a></li>
+        <hr>
         <li><a href="/login">Log In</a></li>
+        <hr>
         <%end%>
       </ul>
     </div>
@@ -49,6 +57,6 @@
     <%= yield %>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-     <script src="main.js"></script>
+     <script src="/main.js"></script>
   </body>
 </html>

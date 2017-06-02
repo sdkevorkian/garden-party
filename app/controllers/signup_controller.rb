@@ -8,7 +8,7 @@ class SignupController < ApplicationController
     puts "======" + user.inspect
     if user.save
       session[:user_id] = user.id
-      redirect_to root_path
+      redirect_to '/plant'
     else
       redirect_to signup_path
     end
