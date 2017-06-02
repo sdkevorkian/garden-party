@@ -32,6 +32,29 @@ li{
     height: 300px;
 }
 
+.plants {
+    height: 780px;
+}
+
+.water-schedule {
+    position: relative;
+    height: 100%;
+}
+
+.water-schedule button {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.water-schedule img {
+    width: 60%;
+}
+
+.water-schedule p {
+    width: 80%;
+}
+
 .water-display {
     height: 100px;
 }
@@ -50,7 +73,9 @@ li{
 
 .facebook {
 
+
 	background-color: rgba(59, 89, 152,1);
+
 }
 
 .text1 {
@@ -65,8 +90,8 @@ li{
     max-height: 100px;
 }
 
-.container1{
-	line-height: 90px;
+.container1 {
+    line-height: 90px;
 }
 
 #mobile {

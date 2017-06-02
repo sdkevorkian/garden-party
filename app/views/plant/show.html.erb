@@ -1,11 +1,11 @@
-<div class="center-align">
+<div class="center-align container">
     <h1>Garden Party</h1>
 
-    <h2>Select All That Apply</h2>
+    <h3>Select All That Apply</h3>
 
 
-    <div class="row">
-        <div class="col s4">
+    <div class="row plants">
+        <div class="col s4 water-schedule">
               <h4>Daily</h4>
               <img src="d.png">
               <p class="left-align">In eggplant, quonset is grain bins, grain trucks quonset pole shed, with fences gates zucchini carrots scrap metal. Sage mower goat, raccoons rhubarb outhouse a, apples berries corn. Brussel sprouts cow, rabbits a gates a, storage shed fences. Joh.
@@ -15,19 +15,17 @@
               <button type="button" class="btn btn-primary">Select</button>
         </div>
 
-        <div class="col s4">
+        <div class="col s4 water-schedule">
               <h4>Weekly</h4>
               <img src="w.png">
               <p class="left-align">Bull bowels cat chicken cow, calf donkey duck. Gourds utters at welding equipment a oink oink haybine. Mallet herbs basil nest, in welding equipment pens quail. Lamb in eggplant baler rain barrels manure hay rake. Mouse soybeans sweet corn hogs llamas or oink oink wind. Rooster celery pineapples fertilizer.
 
               Melon chirp pets in. Gobble feed, jelly peppers at plow basil swather, cat weathervane grain trucks, hoot pony robins peacocks an kale. Prairie dogs raccoons robins rats. Brussel sprouts cow, rabbits a gates a, storage shed fences. Joh.
-
-              Deere bees, parsley sweet corn at, porky pig shovels. Goose hammers cattle rats in crows. . Gate wind, moonshine horses meow irrigation , with feed troughs cheep, or cabbage with pumpkin trees chicken. Utters are weathervane foal est. Outhouse a.
               </p>
               <button type="button" class="btn btn-primary">Select</button>
 
           </div>
-          <div class="col s4">
+          <div class="col s4 water-schedule">
               <h4>Monthly</h4>
               <img src="m.png">
               <p class="left-align">Nails mower. Quack hammers eggplant is utters nails garden. Garden windmill chicks, hen at corn in, lettus a peppers. Lettus gobblers pens, radish on kidney beans, llamas pick up truck. Ewes fox, hay hook hay manure, John Deere radish barn, a ha.
@@ -39,20 +37,22 @@
 </div>
         <div class="row">
             <div class="col s4 offset-s4">
-              <form method="GET" action="/weather">
+                <form action="#">
                   <p>
-                    <input type="radio" name="notifications" value="daily" defaultChecked>
-                    <label for="daily"> daily notifications</label>
+                    <input class="with-gap" name="group1" type="radio" id="test1" />
+                    <label for="test1">daily notifications</label>
                   </p>
                   <p>
-                    <input type="radio" name="notifications" value="weekly">
-                    <label for="weekly">weekly notifications</label>
+                    <input class="with-gap" name="group1" type="radio" id="test2" />
+                    <label for="test2">weekly notifications</label>
                   </p>
                   <p>
-                      <input type="radio" name="notifications" value="none">
-                      <label for="none">none</label>
+                    <input class="with-gap" name="group1" type="radio" id="test3"  />
+                    <label for="test3">none</label>
                   </p>
-                  <input type="submit" class="btn submit">
-              </form>
+
+                  <a href="/weather"><button type="button" class="btn btn-primary">Submit</button></a>
+                </form>
+
             </div>
         </div>

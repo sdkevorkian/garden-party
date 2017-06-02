@@ -58,3 +58,4 @@ gem 'omniauth-facebook'
 
 gem 'httparty'
 gem "simple_calendar", "~> 2.0"
+gem 'rails_12factor', group: :production
