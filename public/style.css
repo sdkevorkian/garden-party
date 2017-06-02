@@ -52,6 +52,11 @@ h2 {
 .directions img {
     max-height: 100px;
 }
+
+.container1{
+	line-height: 90px;
+}
+
 #mobile {
     background-color: grey;
 }
