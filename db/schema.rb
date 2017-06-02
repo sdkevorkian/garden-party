@@ -21,10 +21,10 @@ ActiveRecord::Schema.define(version: 20170602000052) do
     t.string "provider_hash"
     t.string "email"
     t.string "name"
+    t.string "zip_code"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "zip_code"
     t.string "notification_type"
     t.string "notification_freq"
     t.boolean "has_daily"
