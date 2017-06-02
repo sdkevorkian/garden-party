@@ -1,19 +1,22 @@
 body {
-
-	font-family: 'Raleway-Bold';
-	color: rgb(43,43,43);
+    font-family: 'Raleway-Bold';
+    color: rgb(43, 43, 43);
 }
-h1,h2 {
-	 font-family: 'Gravitas One' !important;
 
+h1,
+h2 {
+    font-family: 'Gravitas One' !important;
 }
 
 .btn {
     margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .day {
     width: 14%;
+    height: 300px;
 }
 
 .water-display {
@@ -24,19 +27,36 @@ h1,h2 {
     height: 100px;
 }
 
-.weather-display img {
+.calendar img {
     max-height: 50px;
 }
 
 .calendar {
     height: 300px;
 }
+
 .facebook {
-	background-color: rgb(59, 89, 152);
+
+	background-color: rgba(59, 89, 152,1);
+
 }
-.text1{
-	margin-top: -30px;
+
+.text1 {
+    margin-top: -30px;
 }
+
+.container1 {
+    line-height: 90%x;
+}
+
+.directions img {
+    max-height: 100px;
+}
+
 .container1{
 	line-height: 90px;
+}
+
+#mobile {
+    background-color: grey;
 }

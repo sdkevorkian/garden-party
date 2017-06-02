@@ -1,27 +1,27 @@
-<div class="center">
-<h1>Profile</h1>
 
-<h4>Name</h4>
-<%= @current_user[:name]%>
-<h4>Email</h4>
-<%= @current_user[:email]%>
-<h4>Zip Code</h4>
-<%= @current_user[:zip_code]%>
+<div class="container center">
+    <h1>Profile</h1>
 
-<h4>Plant Types</h4>
-<p>Daily watering:<%=@current_user[:has_daily]%></p>
-<p>Weekly watering:<%=@current_user[:has_weekly]%></p>
-<p>Monthly watering:<%=@current_user[:has_monthly]%></p>
+    <h4>Name</h4>
+    <%= @current_user[:name]%>
+    <h4>Email</h4>
+    <%= @current_user[:email]%>
+    <h4>Zip Code</h4>
+    <%= @current_user[:zip_code]%>
 
-<%if (@current_user[:notification_type] && @current_user[:notification_freq]) %>
-<h4>Notifications</h4>
-  <%=@current_user[:notification_type]%>
-  <%=@current_user[:notification_freq]%>
-  <%else%>
-    <p>You do not currently have notifications enabled</p>
-<%end%>
+    <h4>Plant Types</h4>
+    <p>Daily watering:<%=@current_user[:has_daily]%></p>
+    <p>Weekly watering:<%=@current_user[:has_weekly]%></p>
+    <p>Monthly watering:<%=@current_user[:has_monthly]%></p>
 
+    <%if (@current_user[:notification_type] && @current_user[:notification_freq]) %>
+    <h4>Notifications</h4>
+      <%=@current_user[:notification_type]%>
+      <%=@current_user[:notification_freq]%>
+      <%else%>
+        <p>You do not currently have notifications enabled</p>
+    <%end%>
 
-
-    <a href="/profile/edit">Edit your profile</a>
+        <a href="/profile/edit">Edit your profile</a>
+    </div>
 </div>
