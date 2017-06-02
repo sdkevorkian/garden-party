@@ -1,2 +1,24 @@
 <h1>Profile#show</h1>
 <p>Find me in app/views/profile/show.html.erb</p>
+
+<h3>Name</h3>
+<%= @current_user[:name]%>
+<h3>Email</h3>
+<%= @current_user[:email]%>
+<h3>Zip Code</h3>
+<%= @current_user[:zip_code]%>
+
+<h3>Plant Types</h3>
+<p>Daily watering:<%=@current_user[:has_daily]%></p>
+<p>Weekly watering:<%=@current_user[:has_weekly]%></p>
+<p>Monthly watering:<%=@current_user[:has_monthly]%></p>
+
+<%if (@current_user[:notification_type] && @current_user[:notification_freq]) %>
+<h3>Notifications</h3>
+  <%=@current_user[:notification_type]%>
+  <%=@current_user[:notification_freq]%>
+  <%else%>
+    <p>You do not currently have notifications enabled</p>
+<%end%>
+
+<a href="/profile/edit">Edit your profile</a>
