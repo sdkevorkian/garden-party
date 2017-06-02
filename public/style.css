@@ -10,6 +10,8 @@ h1,h2 {
 
 .btn {
     margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .day {
@@ -32,11 +34,14 @@ h1,h2 {
     height: 300px;
 }
 .facebook {
-	background-color: rgb(59, 89, 152);
+	background-color: rgba(59, 89, 152,1);
 }
 .text1{
 	margin-top: -30px;
 }
 .container1{
 	line-height: 90%x;
+}
+#mobile {
+    background-color: grey;
 }
