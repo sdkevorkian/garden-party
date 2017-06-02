@@ -3,7 +3,7 @@
     <h1>Profile</h1>
     <div class="row">
         <div class = "col s6">
-            <div>
+            <div class="profile-section">
                 <h4>Name</h4>
                 <%= @current_user[:name]%>
                 <h4>Email</h4>
@@ -11,7 +11,7 @@
                 <h4>Zip Code</h4>
                 <%= @current_user[:zip_code]%>
             </div>
-            <div>
+            <div class="profile-section">
             <%if (@current_user[:notification_type] && @current_user[:notification_freq]) %>
             <h4>Notifications</h4>
               <%=@current_user[:notification_type]%>
@@ -22,9 +22,17 @@
             </div>
         </div>
         <div class="col s6">
+        <div class="profile-section">
             <h4>Watering Categories</h4>
+                <div>
                 <img src="/d.png">
+                    <h5>Daily</h5>
+                </div>
+                <div>
                 <img src="/w.png">
+                    <h5>Weekly</h5>
+                </div>
+                </div>
         </div>
         </div>
         <a href="/profile/edit" class="btn">Edit your profile</a>
