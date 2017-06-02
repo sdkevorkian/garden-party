@@ -5,9 +5,9 @@
   <%= f.email_field :email, placeholder: "Enter your email" %>
   <%= f.password_field :password, placeholder: "Enter your password" %>
   <%= f.text_field :zip_code, placeholder: "Enter your zip code" %>
-  <%= f.submit "Sign up" %>
+  <%= f.submit "Sign up", class: "btn" %>
 <% end %>
 
-<%= link_to "Sign up with Facebook", "/auth/facebook", class: "btn btn-primary" %>
+<%= link_to "Sign up with Facebook", "/auth/facebook", class: "btn" %>
 
-<p>Current User: <%= @current_user.inspect %></p>
+

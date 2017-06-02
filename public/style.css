@@ -1,1 +1,9 @@
-style.css
+body{
+	font-family: 'Raleway-Bold';
+}
+h1{
+	 font-family: 'Gravitas One' !important;
+}
+.btn {
+	margin-bottom: 5px;
+}

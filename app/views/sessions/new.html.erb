@@ -3,9 +3,8 @@
 <%= form_for :user do |f| %>
   <%= f.email_field :email, placeholder: "Enter your email" %>
   <%= f.password_field :password, placeholder: "Enter your password" %>
-  <%= f.submit "Login" %>
+  <%= f.submit "Login", class: "btn" %>
 <% end %>
 
-<%= link_to "Login with Facebook", "/auth/facebook", class: "btn btn-primary" %>
+<%= link_to "Login with Facebook", "/auth/facebook", class: "btn" %>
 
-<p>Current User: <%= @current_user.inspect %></p>
