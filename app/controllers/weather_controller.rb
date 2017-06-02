@@ -1,4 +1,5 @@
 require 'httparty'
+require "simple_calendar"
 class WeatherController < ApplicationController
 
   def show
