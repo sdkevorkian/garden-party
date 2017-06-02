@@ -1,13 +1,19 @@
-<h1>Sign Up</h1>
-
+<div class="center container">
+	<div class="container">
+		<div class="container">
+<h3>Sign Up</h3>
 <%= form_for :user do |f| %>
-  <%= f.text_field :name, placeholder: "Enter your name" %>
-  <%= f.email_field :email, placeholder: "Enter your email" %>
-  <%= f.password_field :password, placeholder: "Enter your password" %>
-  <%= f.text_field :zip_code, placeholder: "Enter your zip code" %>
-  <%= f.submit "Sign up", class: "btn" %>
+  <%= f.text_field :name, placeholder: "Enter user name" %>
+  <%= f.text_field :zip_code, placeholder: "Zip Code" %>
+  <hr>
+  <%= f.email_field :email, placeholder: "Email" %>
+  <%= f.password_field :password, placeholder: "Password" %>
+<%= link_to "Sign up with Facebook", "/auth/facebook", class: "btn facebook" %>
+<br>
+  <%= f.submit "Sign up", class: "btn green" %>
 <% end %>
-
-<%= link_to "Sign up with Facebook", "/auth/facebook", class: "btn" %>
+		</div>
+	</div>
+</div>
 
 
