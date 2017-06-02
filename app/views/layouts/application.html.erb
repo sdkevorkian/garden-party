@@ -3,6 +3,7 @@
   <head>
     <title>Garden Party</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -16,6 +17,7 @@
         <li><a href="/profile/show">Profile</a></li>
         <li><a href="/plant">Plants</a></li>
         <li><a href="/weather">My Garden</a></li>
+        <li><a href="/about">About Us</a></li>
         <li><%= link_to "Logout", "/auth/logout", class: "" %></li>
         <%else%>
         <li><a href="/signup">Sign Up</a></li>
@@ -27,6 +29,7 @@
         <li><a href="/profile/show">Profile</a></li>
         <li><a href="/plant">Plants</a></li>
         <li><a href="/weather">My Garden</a></li>
+        <li><a href="/about">About Us</a></li>
         <li><%= link_to "Logout", "/auth/logout", class: "" %></li>
         <%else%>
         <li><a href="/signup">Sign Up</a></li>
