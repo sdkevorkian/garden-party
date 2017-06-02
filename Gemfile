@@ -57,4 +57,3 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 
 gem 'httparty'
-gem "simple_calendar", "~> 2.0"
