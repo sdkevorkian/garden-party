@@ -9,8 +9,10 @@
 
                <%=date.mday%>
                <div class="water-display">
-               <%if date.wday == 1 || date.wday == 4%>
-                    <img src="/Drops.png">
+               <%if date.wday == 1 %>
+                    <img src="/dw.png">
+                <%elsif date.wday == 4 %>
+                    <img src="/d.png">
                 <%end%>
                 </div>
                 <div class="weather-display">
@@ -29,15 +31,13 @@
         <div class="row">
                 <h2>Monday</h2>
             <div class="col s6">
-                <p>Water your weekly and daily plants:</p>
-                <img src="dw.png">
+                <h4>Water your weekly and daily plants!</h4>
             </div>
         </div>
         <div class="row">
                 <h2>Thursday</h2>
             <div class="col s6">
-                <p>Water your daily plants:</p>
-                <img src="d.png">
+                <h4>Water your daily plants!</h4>
             </div>
         </div>
 

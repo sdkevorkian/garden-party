@@ -19,6 +19,14 @@ h2 {
     height: 300px;
 }
 
+.water-schedule img {
+    width: 60%;
+}
+
+.water-schedule p {
+    width: 80%;
+}
+
 .water-display {
     height: 100px;
 }
@@ -36,9 +44,7 @@ h2 {
 }
 
 .facebook {
-
-	background-color: rgba(59, 89, 152,1);
-
+    background-color: rgba(59, 89, 152, 1);
 }
 
 .text1 {
@@ -53,8 +59,8 @@ h2 {
     max-height: 100px;
 }
 
-.container1{
-	line-height: 90px;
+.container1 {
+    line-height: 90px;
 }
 
 #mobile {
