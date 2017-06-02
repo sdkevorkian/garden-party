@@ -3,14 +3,15 @@
   <head>
     <title>Garden Party</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
   <nav>
     <div class="nav-wrapper">
-      <a href="/" id="logo"><img src="logo.png" alt="our logo"></a>
+      <a href="/" id="logo"><img src="/logo.png" alt="our logo"></a>
       <a href="#" data-activates="mobile" class="button-collapse mobile-nav black-text"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
       <% if @current_user %>
@@ -56,6 +57,6 @@
     <%= yield %>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-     <script src="main.js"></script>
+     <script src="/main.js"></script>
   </body>
 </html>
