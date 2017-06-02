@@ -18,12 +18,10 @@
                 <div class="weather-display">
                     <%if date.wday == 1 || date.wday == 4%>
                         <img src="/Sunny.png">
-                    <%elsif date.wday ==3 || date.wday==6%>
-                        <img src="/Rain.png">
                     <%elsif date.wday ==2%>
                         <img src="/storm.png">
                     <%else%>
-                        <img src="/Drops.png">
+                        <img src="/Rain.png">
                     <%end%>
                 </div>
             <%end%>
