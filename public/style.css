@@ -1,10 +1,32 @@
-body{
-	font-family: 'Raleway-Bold';
-	color: rgb(43,43,43);
+body {
+    font-family: 'Raleway-Bold';
+    color: rgb(43, 43, 43);
 }
-h1{
-	 font-family: 'Gravitas One' !important;
+
+h1 {
+    font-family: 'Gravitas One' !important;
 }
+
 .btn {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.day-display {
+    width: 14%;
+}
+
+.water-display {
+    height: 100px;
+}
+
+.weather-display {
+    height: 100px;
+}
+
+.weather-display img {
+    max-height: 50px;
+}
+
+.calendar {
+    height: 300px;
 }

@@ -4,25 +4,31 @@
 
 
     <div class ="container">
-         <%= week_calendar do |date| %>
-         <%=date.mday%>
-         <div class="water-display">
-         <%if date.wday == 1 || date.wday == 4%>
-              <div>
-                  water plants
+        <div class ="calendar">
+             <%= week_calendar do |date| %>
+             <div class="day-display">
+                 <%=date.mday%>
+                 <div class="water-display">
+                 <%if date.wday == 1 || date.wday == 4%>
+                      <div>
+                          water plants
+                      </div>
+                  <%end%>
+                  </div>
+                  <div class="weather-display">
+                      <%if date.wday == 1 || date.wday == 4%>
+                          <img src="/Sunny.png">
+                      <%elsif date.wday ==3 || date.wday==6%>
+                          <img src="/Rain.png">
+                      <%elsif date.wday ==2%>
+                          <img src="/storm.png">
+                      <%else%>
+                          <img src="/Drops.png">
+                      <%end%>
+                  </div>
               </div>
-          <%end%>
-          </div>
-          <div class="weather-display">
-          <%if date.wday == 1 || date.wday == 4%>
-            weather = sunny
-          <%end%>
-              <div>
-                  weather icons
-              </div>
-          </div>
-        <%end%>
-
+            <%end%>
+        </div>
 
         <div class ="left-align">
             <h2>Monday</h2>
@@ -31,5 +37,5 @@
             <p>Water your daily plants</p>
         </div>
 
-    </div>
+        </div>
 </div>
