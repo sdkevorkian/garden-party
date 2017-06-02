@@ -8,8 +8,8 @@
     <%=u.email_field :email, value: @current_user[:email]%>
     <%=u.password_field :password, value: @current_user[:password]%>
     <%=u.text_field :zip_code, value: @current_user[:zip_code]%>
-    <p>Plants</p>
 
+    <h4>Plants</h4>
     <p><%= radio_button_tag(:has_daily, "true") %>
     <%= label_tag(:has_daily_true, "I have plants that need daily watering") %>
     <%= radio_button_tag(:has_daily, "false") %>
@@ -25,7 +25,9 @@
     <%= radio_button_tag(:has_monthly, "false") %>
     <%= label_tag(:has_monthly_false, "I do not") %></p>
 
-    <p>Notifications</p>
+    <h4>Notifications</h4>
     <%=u.text_field :notification_type, value: @current_user[:notification_type]%>
     <%=u.text_field :notification_freq, value: @current_user[:notification_freq]%>
+
+    <%=u.submit 'Edit', class: "btn"  %>
 <%end%>
