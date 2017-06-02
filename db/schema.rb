@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170601231010) do
+ActiveRecord::Schema.define(version: 20170602000052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,11 @@ ActiveRecord::Schema.define(version: 20170601231010) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "zip_code"
+    t.string "notification_type"
+    t.string "notification_freq"
+    t.boolean "has_daily"
+    t.boolean "has_weekly"
+    t.boolean "has_monthly"
   end
 
 end
