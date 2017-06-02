@@ -1,14 +1,35 @@
+<div class="center-align">
+    <h3>Schedule for Week of</h3>
+    <h1>MAY 29 - JUNE 4</h1>
 
-<h3>Schedule for Week of</h3>
-<h1>JUNE 6 - 13</h1>
+
+    <div class ="container">
+         <%= week_calendar do |date| %>
+         <%=date.mday%>
+         <div class="water-display">
+         <%if date.wday == 1 || date.wday == 4%>
+              <div>
+                  water plants
+              </div>
+          <%end%>
+          </div>
+          <div class="weather-display">
+          <%if date.wday == 1 || date.wday == 4%>
+            weather = sunny
+          <%end%>
+              <div>
+                  weather icons
+              </div>
+          </div>
+        <%end%>
 
 
-<%= week_calendar do |date| %>
+        <div class ="left-align">
+            <h2>Monday</h2>
+            <p>Water your weekly and daily plants</p>
+            <h2>Thursday</h2>
+            <p>Water your daily plants</p>
+        </div>
 
-  <%=date%>
-  <div>
-  water plants
-  </div>
-<%end%>
-
-<%=@response%>
+    </div>
+</div>
