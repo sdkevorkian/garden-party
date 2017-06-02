@@ -4,5 +4,28 @@
 <h1>Edit Profile Page</h1>
 
 <%=form_for :user do |u|%>
-    <%=u.text_field :name, placeholder: "@current_user[:name]"%>
+    <%=u.text_field :name, value: @current_user[:name]%>
+    <%=u.email_field :email, value: @current_user[:email]%>
+    <%=u.password_field :password, value: @current_user[:password]%>
+    <%=u.text_field :zip_code, value: @current_user[:zip_code]%>
+    <p>Plants</p>
+
+    <p><%= radio_button_tag(:has_daily, "true") %>
+    <%= label_tag(:has_daily_true, "I have plants that need daily watering") %>
+    <%= radio_button_tag(:has_daily, "false") %>
+    <%= label_tag(:has_daily_false, "I do not") %></p>
+
+    <p><%= radio_button_tag(:has_weekly, "true") %>
+    <%= label_tag(:has_weekly_true, "I have plants that need weekly watering") %>
+    <%= radio_button_tag(:has_weekly, "false") %>
+    <%= label_tag(:has_weekly_false, "I do not") %></p>
+
+    <p><%= radio_button_tag(:has_monthly, "true") %>
+    <%= label_tag(:has_monthly_true, "I have plants that need monthly watering") %>
+    <%= radio_button_tag(:has_monthly, "false") %>
+    <%= label_tag(:has_monthly_false, "I do not") %></p>
+
+    <p>Notifications</p>
+    <%=u.text_field :notification_type, value: @current_user[:notification_type]%>
+    <%=u.text_field :notification_freq, value: @current_user[:notification_freq]%>
 <%end%>
